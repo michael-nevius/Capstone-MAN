@@ -1,0 +1,22 @@
+.parentApplicationApproval {
+  height: 100vh;
+  &Div {
+    height: 50rem;
+    width: 40rem;
+    background-color: #ff5757;
+    color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    padding: 8rem 3rem 3rem;
+  }
+  border-radius: 0.8rem;
+  i {
+    font-size: 10rem;
+  }
+  p {
+    font-size: 5rem;
+    &:last-child {
+      font-size: 3rem;
+    }
+  }
+}

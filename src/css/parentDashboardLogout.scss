@@ -1,0 +1,88 @@
+.parentDashboardLogout {
+  height: calc(100vh - 6rem);
+  &-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.788);
+    z-index: 500;
+    overflow-y: scroll;
+    backface-visibility: hidden;
+    overflow: hidden;
+  }
+  &-modal {
+    width: 45rem;
+    min-height: 15.5rem;
+    padding: 1.5rem 2.6rem 2.6rem 2.6rem;
+    background: white;
+    border-radius: 0.6rem;
+    &-close {
+      text-align: right;
+      i {
+        display: inline-block;
+        font-size: 4rem;
+        cursor: pointer;
+      }
+    }
+    &-header {
+      margin-top: 1rem;
+      font-size: 3rem;
+      font-weight: 500;
+      text-align: center;
+    }
+    &-attendence-file {
+      &-item {
+        min-height: 10rem;
+        width: 10rem;
+        padding: 1rem;
+        cursor: pointer;
+        &-imgbox {
+          width: 8rem;
+          height: 8rem;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        p {
+          text-align: center;
+          font-size: 1.5rem;
+          color: black;
+          font-weight: 500;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+
+    &-btns {
+      margin-top: 2rem;
+      padding: 1rem 0;
+      button {
+        flex: 1;
+        max-width: 47%;
+        padding: 1rem;
+        // background-color: transparent;
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+        font: inherit;
+        font-size: 2rem;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      &-cancel {
+        background-color: gray;
+        color: white;
+      }
+      &-yes {
+        background-color: steelblue;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.employeeDashboardSetEvent {
+  height: calc(100vh - 6rem);
+  &-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba(227, 18, 182, 0.901);
+    z-index: 500;
+    overflow-y: scroll;
+    backface-visibility: hidden;
+    overflow: hidden;
+  }
+  &-modal {
+    min-width: 45rem;
+    min-height: 15.5rem;
+    padding: 1.5rem 2.6rem 2.6rem 2.6rem;
+    background: white;
+    border-radius: 0.6rem;
+    &-close {
+      text-align: right;
+      i {
+        display: inline-block;
+        font-size: 4rem;
+        cursor: pointer;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      //   background: #fff;
+      padding: 3rem;
+      width: 50rem;
+      min-height: 380px;
+      // box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+      border-radius: 0.8rem;
+      label {
+        font-size: 1.6rem;
+        color: steelblue;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+      input,
+      select {
+        outline: none;
+        padding: 1.5rem 1.5rem;
+        font-size: 1.8rem;
+        margin-bottom: 1.8rem;
+        &:focus {
+          border: 2px solid steelblue;
+        }
+      }
+      > a {
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.6rem;
+        padding-top: 0.8rem;
+        color: steelblue;
+        margin: 2rem 0 0 0;
+      }
+      hr {
+        background: #f7f7f7;
+        margin: 0.5rem 0 1.8rem 0;
+      }
+      p {
+        color: red;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

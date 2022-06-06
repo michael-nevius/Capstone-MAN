@@ -1,0 +1,78 @@
+@import "../css/mixins.scss";
+
+.signup {
+  font-family: "Poppins", sans-serif;
+  background: #8616e8;
+  min-height: 100vh;
+  padding: 3rem 0 5rem 0;
+  &-content {
+    height: 100%;
+    &-name {
+      margin: auto;
+      width: 40rem;
+      text-align: center;
+      h1 {
+        font-size: 4.5rem;
+        color: rgb(78, 227, 49);
+      }
+      p {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 2.5rem;
+      }
+      @include breakpoint-down(small) {
+        text-align: center;
+        margin: 0;
+      }
+    }
+    form {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      padding: 3rem;
+      width: 50rem;
+      min-height: 380px;
+      box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+      border-radius: 0.8rem;
+      input {
+        outline: none;
+        padding: 1.5rem 1.5rem;
+        font-size: 1.8rem;
+        &:focus {
+          border: 2px solid steelblue;
+        }
+      }
+      > a {
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.6rem;
+        padding-top: 0.8rem;
+        color: steelblue;
+        margin: 1rem 0;
+      }
+      hr {
+        background: #f7f7f7;
+        margin: 1.5rem 1rem;
+      }
+      p {
+        color: red;
+        font-size: 1.5rem;
+        margin-bottom: 1.8rem;
+      }
+    }
+    &-loginBtn {
+      outline: none;
+      border: none;
+      background: #ff5757;
+      padding: 1.1rem;
+      border-radius: 0.4rem;
+      font-size: 2.1rem;
+      color: #fff;
+      &:hover {
+        background: #ff5757;
+        cursor: pointer;
+      }
+    }
+  }
+}

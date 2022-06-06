@@ -1,0 +1,70 @@
+@import "../css/mixins.scss";
+
+.parentDashboardAddChild {
+  font-family: "Poppins", sans-serif;
+  background: #8616e8;
+  height: calc(120vh - 6.56rem);
+  overflow-y: scroll;
+  padding: 3rem 3rem;
+  position: relative;
+  form {
+    display: flex;
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+    padding: 3rem;
+    width: 50rem;
+    min-height: 380px;
+    // box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 0.8rem;
+    label {
+      font-size: 1.6rem;
+      color: rgb(0, 0, 0);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    input,
+    select {
+      outline: none;
+      padding: 1.5rem 1.5rem;
+      font-size: 1.8rem;
+      &:focus {
+        border: 2px solid steelblue;
+      }
+    }
+    > a {
+      text-decoration: none;
+      text-align: center;
+      font-size: 1.6rem;
+      padding-top: 0.8rem;
+      color: steelblue;
+      margin: 2rem 0 0 0;
+    }
+    hr {
+      background: #ffd6f8;
+      margin: 0.5rem 0 1.8rem 0;
+    }
+    p {
+      color: rgb(244, 9, 9);
+      font-size: 1.5rem;
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  &-create-accountBtn {
+    display: block;
+    outline: none;
+    border: none;
+    background: #ff5757;
+    border-radius: 0.4rem;
+    font-size: 2.1rem;
+    width: 100%;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    color: #fff !important ;
+    padding: 1.3rem;
+    &:hover {
+      background: #ff5757;
+      cursor: pointer;
+    }
+  }
+}

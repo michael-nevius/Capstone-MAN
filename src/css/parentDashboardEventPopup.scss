@@ -1,0 +1,70 @@
+.parentDashboardEventPopup {
+  height: calc(100vh - 6rem);
+  &-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.788);
+    z-index: 500;
+    overflow-y: scroll;
+    backface-visibility: hidden;
+    overflow: hidden;
+  }
+  &-modal {
+    min-height: 40rem;
+    width: 35rem;
+    background-color: white;
+    border-radius: 0.3rem;
+    margin: 1.5rem;
+    padding: 2rem;
+    &-header {
+      background-color: #ff5757;
+      color: white;
+      padding: 1rem;
+      font-size: 2.2rem;
+      line-height: 1.1;
+      font-weight: 500;
+    }
+    &-date {
+      margin: 1rem 0;
+      padding: 1rem;
+      font-size: 2rem;
+      color: white;
+      font-weight: 600;
+      background-color: steelblue;
+    }
+    &-info {
+      font-size: 1.6rem;
+      color: gray;
+    }
+    &-new {
+      p {
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-align: center;
+        margin: 1rem 0 2rem;
+        text-decoration: underline;
+      }
+    }
+    &-skip {
+      font-size: 1.8rem;
+      font-weight: 400;
+      text-decoration: underline;
+      margin-right: 2rem;
+      cursor: pointer;
+    }
+    &-reg {
+      color: white;
+      font-size: 2rem;
+      font-weight: 500;
+      background-color: #ff5757;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+  }
+}

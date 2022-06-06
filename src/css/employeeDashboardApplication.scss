@@ -1,0 +1,55 @@
+.employeeDashboardApplication {
+  padding: 3rem;
+  height: calc(100vh - 6.56rem);
+  background-color: #8616e8;
+  overflow-y: scroll;
+  &-table {
+    &-nochild {
+      font-size: 2.5rem;
+      background-color: white;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+    &-header,
+    &-child {
+      & > div {
+        flex: 1;
+        padding: 1rem;
+        margin: 0 0.5rem;
+        font-size: 1.6rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+    &-header {
+      color: rgb(244, 244, 244);
+      opacity: 0.75;
+    }
+    &-child {
+      margin: 1rem 0;
+      font-weight: 500;
+      color: rgb(33, 197, 247);
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+        rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      &-docs {
+        &-btn {
+          font: inherit;
+          border: none;
+          outline: none;
+          background-color: green;
+          width: fit-content;
+          color: white;
+          padding: 0.3rem 0.8rem;
+          border-radius: 0.5rem;
+          cursor: pointer;
+          &.not {
+            background-color: lightgray;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+}

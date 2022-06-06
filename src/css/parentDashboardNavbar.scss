@@ -1,0 +1,54 @@
+.parentDashboardNavbar {
+  min-height: 6rem;
+  padding: 1rem 2rem 1rem 3rem;
+  background-color: #2ce1d2;
+  color: black;
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;
+  &-header {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  &-balance {
+    padding: 0.8rem 1.2rem;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+    background-color: #d82828;
+    color: white;
+    font-size: 1.7rem;
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+  &-addChild {
+    a {
+      height: 80%;
+      border-radius: 0.5rem;
+      padding: 0.8rem 1.2rem;
+      text-decoration: none;
+      color: white;
+      font-size: 1.7rem;
+      cursor: pointer;
+      background-color: rgb(87, 180, 70);
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+  &-btns-profile {
+    &-imgbox {
+      cursor: pointer;
+      width: 7rem;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.employeeDashboardEventDetails {
+  height: calc(100vh - 6rem);
+  &-wrapper {
+    //   background-color: red;
+    position: fixed;
+    // top: 6rem;
+    top: 0;
+    // left: 28rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    //   margin: 5rem;
+    // padding: 2rem 8rem;
+    background: rgba(0, 0, 0, 0.788);
+    z-index: 500;
+    backface-visibility: hidden;
+    overflow-y: scroll;
+  }
+  &-close {
+    text-align: right;
+    i {
+      font-size: 3.5rem;
+      color: black;
+      cursor: pointer;
+    }
+  }
+  &-modal {
+    min-width: 80rem;
+    min-height: 20.5rem;
+    padding: 1.5rem 2.6rem 2.6rem 2.6rem;
+    margin: 1rem 0;
+    background: white;
+    border-radius: 0.6rem;
+  }
+  &-table {
+    &-nochild {
+      font-size: 2.5rem;
+      background-color: white;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+    &-header,
+    &-child {
+      & > div {
+        flex: 1;
+        padding: 1rem;
+        margin: 0 0.5rem;
+        font-size: 1.6rem;
+        letter-spacing: 0.1rem;
+      }
+
+      & > div:last-child {
+        flex: 0.5 !important;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    &-header {
+      color: gray;
+      opacity: 0.75;
+    }
+    &-child {
+      margin: 1rem 0;
+      font-weight: 500;
+      color: black;
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+        rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.parentDashboardChildDocs {
+  height: calc(100vh - 6rem);
+  &-wrapper {
+    //   background-color: red;
+    position: fixed;
+    // top: 6rem;
+    top: 0;
+    // left: 28rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    //   margin: 5rem;
+    // padding: 2rem 8rem;
+    background: rgba(0, 0, 0, 0.788);
+    z-index: 500;
+    overflow-y: scroll;
+    backface-visibility: hidden;
+    overflow: hidden;
+  }
+  &-modal {
+    width: 80rem;
+    min-height: 20.5rem;
+    padding: 1.5rem 2.6rem 2.6rem 2.6rem;
+    background: white;
+    border-radius: 0.6rem;
+    &-close {
+      text-align: right;
+      i {
+        display: inline-block;
+        font-size: 4rem;
+        cursor: pointer;
+      }
+    }
+    &-header {
+      margin-top: 1rem;
+      font-size: 2rem;
+      font-weight: 500;
+      border-bottom: 1px solid lightgray;
+    }
+    &-attendence-file {
+      margin: 1rem 0;
+      &-item {
+        min-height: 10rem;
+        min-width: 10rem;
+        padding: 1rem;
+        margin: 0 1rem;
+        cursor: pointer;
+        &-imgbox {
+          width: 8rem;
+          height: 8rem;
+          margin: 0 auto;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        p {
+          text-align: center;
+          font-size: 1.5rem;
+          color: black;
+          font-weight: 500;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+    &-subheader {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 2rem;
+      font-family: 400;
+    }
+    &-btns {
+      margin-top: 2rem;
+      padding: 2rem 0;
+      button {
+        flex: 1;
+        max-width: 47%;
+        padding: 1.25rem;
+        // background-color: transparent;
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+        font-size: 1.6rem;
+        font-family: 500;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      &-cancel {
+        background-color: gray;
+        color: white;
+      }
+      &-yes {
+        background-color: steelblue;
+        color: white;
+      }
+    }
+  }
+}

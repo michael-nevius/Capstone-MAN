@@ -1,0 +1,93 @@
+@import "../css/mixins.scss";
+
+.login {
+  font-family: "Poppins", sans-serif;
+  background: #8616e8;
+  height: 100vh;
+  &-content {
+    height: 100%;
+    &-name {
+      margin-right: 8rem;
+      width: 40rem;
+      h1 {
+        font-size: 4.5rem;
+        color: rgb(62, 237, 13);
+      }
+      p {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+      @include breakpoint-down(small) {
+        text-align: center;
+        margin: 0;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      padding: 3rem;
+      width: 40rem;
+      min-height: 380px;
+      box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+      border-radius: 0.8rem;
+      input {
+        outline: none;
+        padding: 1.5rem 1.5rem;
+        font-size: 1.8rem;
+        &:focus {
+          border: 1.8px solid steelblue;
+        }
+      }
+      > a {
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.6rem;
+        padding-top: 0.8rem;
+        color: steelblue;
+        margin: 2rem 0 0 0;
+      }
+      hr {
+        background: #f7f7f7;
+        margin: 0.5rem 0 1.8rem 0;
+      }
+      p {
+        color: red;
+        font-size: 1.5rem;
+        margin-bottom: 1.8rem;
+      }
+    }
+    &-loginBtn {
+      outline: none;
+      border: none;
+      background: steelblue;
+      padding: 1.1rem;
+      border-radius: 0.4rem;
+      font-size: 2.1rem;
+      color: #fff;
+      &:hover {
+        background: steelblue;
+        cursor: pointer;
+      }
+    }
+    &-create-accountBtn {
+      outline: none;
+      border: none;
+      background: #ff5757;
+      border-radius: 0.4rem;
+      font-size: 2.1rem;
+      width: 80%;
+      margin: 0 auto;
+      &:hover {
+        background: #ff5757;
+        cursor: pointer;
+      }
+      a {
+        display: block;
+        color: #fff !important ;
+        text-decoration: none;
+        padding: 1.3rem;
+      }
+    }
+  }
+}
