@@ -17,6 +17,7 @@ const EmployeeDashboardSetEvent = ({ setSetEventModal }) => {
         EventTime: eventFormData.time,
         EventsAddress: eventFormData.address,
         EventsCost: eventFormData.cost,
+        EventsDescription: eventFormData.description,
         EventsSafety: eventFormData.safety,
       }),
     })
@@ -31,8 +32,8 @@ const EmployeeDashboardSetEvent = ({ setSetEventModal }) => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, date, time, address, cost, safety } = eventFormData;
-    if (name && date && time && address && cost && safety) {
+    const { name, date, time, address, cost, description, safety } = eventFormData;
+    if (name && date && time && address && cost && description && safety) {
       // console.log("called....");
       callAddEventAPI();
     }
@@ -106,6 +107,17 @@ const EmployeeDashboardSetEvent = ({ setSetEventModal }) => {
                 setEventFormData({
                   ...eventFormData,
                   cost: e.target.value,
+                });
+              }}
+            ></input>
+            <label>Event Description</label>
+            <input
+              type="text"
+              placeholder="Description"
+              onChange={(e) => {
+                setEventFormData({
+                  ...eventFormData,
+                  description: e.target.value,
                 });
               }}
             ></input>

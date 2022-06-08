@@ -36,6 +36,9 @@ const ParentDashboardEventPopup = ({ eventData, setEventData }) => {
                     Cost: {eventData.EventsCost}
                   </p>
                   <p className="parentDashboardEventsDiv-item-date">
+                    Description: {eventData.EventsDescription}
+                  </p>
+                  <p className="parentDashboardEventsDiv-item-date">
                     Safety: {eventData.EventsSafety}
                   </p>
                   <div className="flex flex-aic flex-jcc">

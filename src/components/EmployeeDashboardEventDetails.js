@@ -87,7 +87,7 @@ const EmployeeDashboardEventDetails = ({
                             Phone Number
                           </div>
                           <div className="employeeDashboardEventDetails-header-docs">
-                            Number of member
+                            Number of members
                           </div>
                         </div>
                       </>
