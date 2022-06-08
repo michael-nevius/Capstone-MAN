@@ -1,7 +1,7 @@
 .parentDashboardNavbar {
   min-height: 6rem;
   padding: 1rem 2rem 1rem 3rem;
-  background-color: #2ce1d2;
+  background-color: #0064FF;
   color: black;
   -webkit-box-shadow: 0 4px 6px -6px #222;
   -moz-box-shadow: 0 4px 6px -6px #222;
@@ -15,7 +15,7 @@
     padding: 0.8rem 1.2rem;
     margin: 0 1rem;
     border-radius: 0.5rem;
-    background-color: #d82828;
+    background-color: #e86f23;
     color: white;
     font-size: 1.7rem;
     i {
@@ -31,7 +31,7 @@
       color: white;
       font-size: 1.7rem;
       cursor: pointer;
-      background-color: rgb(87, 180, 70);
+      background-color: #009E93;
       &:hover {
         opacity: 0.75;
       }
@@ -40,6 +40,7 @@
   &-btns-profile {
     &-imgbox {
       cursor: pointer;
+      background-color: #f80c0c;
       width: 7rem;
       img {
         display: block;

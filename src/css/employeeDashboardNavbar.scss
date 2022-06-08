@@ -1,7 +1,7 @@
 .employeeDashboardNavbar {
   min-height: 6rem;
   padding: 1rem 2rem 1rem 3rem;
-  background-color: #2ce1d2;
+  background-color: #0064FF;
   color: black;
   -webkit-box-shadow: 0 4px 6px -6px #222;
   -moz-box-shadow: 0 4px 6px -6px #222;
@@ -9,18 +9,18 @@
   &-header {
     font-size: 2.5rem;
     font-weight: 500;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
   }
   &-addChild {
     a {
       height: 80%;
-      border-radius: 0.5rem;
-      padding: 0.8rem 1.2rem;
+      border-radius: 1rem;
+      padding: 1rem 1.2rem;
       text-decoration: none;
       color: white;
       font-size: 1.7rem;
       cursor: pointer;
-      background-color: rgba(34, 236, 23, 0.69);
+      background-color: #009E93;
       &:hover {
         opacity: 0.75;
       }
@@ -29,6 +29,7 @@
   &-btns-profile {
     &-imgbox {
       cursor: pointer;
+      background-color: #f80c0c;
       width: 7rem;
       img {
         display: block;
