@@ -12,6 +12,7 @@ import ParentDashboard from "./pages/ParentDashbord/ParentDashboard";
 import ParentDashboardStartPage from "./pages/ParentDashbord/ParentDashboardStartPage/ParentDashboardStartPage";
 import Signup from "./pages/SignupPage/Signup";
 import ParentDashboardEvents from "./components/ParentDashboardEvents";
+import ParentDashboardEventsCalender from "./components/ParentDashboardEventsCalender";
 import ParentDashboardProfile from "./components/ParentDashboardProfile";
 import ParentDashboardLogout from "./components/ParentDashboardLogout";
 import EmployeeDashboard from "./pages/EmployeeDashbord/EmployeeDashboard";
@@ -106,6 +107,14 @@ function App() {
                 element={
                   <>
                     <ParentDashboardEvents />
+                  </>
+                }
+              ></Route>
+              <Route
+                path="calendar"
+                element={
+                  <>
+                    <ParentDashboardEventsCalender />
                   </>
                 }
               ></Route>

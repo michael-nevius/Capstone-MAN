@@ -3,6 +3,7 @@ import "../css/employeeDashboardSetEvent.scss";
 import { baseURL } from "../utils/api/baseURL";
 
 const EmployeeDashboardSetEvent = ({ setSetEventModal }) => {
+  
   const [eventFormData, setEventFormData] = useState({});
   const callAddEventAPI = () => {
     fetch(baseURL + `addEvent/`, {
@@ -25,6 +26,7 @@ const EmployeeDashboardSetEvent = ({ setSetEventModal }) => {
       .then((res) => {
         const { status } = res;
         if (status === 200) {
+          let body = "Message to be displayed"
           setSetEventModal(false);
           window.location.pathname = "/e/dashboard/events";
         }
@@ -38,6 +40,7 @@ const EmployeeDashboardSetEvent = ({ setSetEventModal }) => {
       callAddEventAPI();
     }
   };
+  
   return (
     <section className="employeeDashboardSetEvent">
       <div className="employeeDashboardSetEvent-wrapper flex flex-aic flex-jcc">
