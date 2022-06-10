@@ -21,6 +21,11 @@ const ParentDashboardSidebar = ({ activeLink, setActiveLink }) => {
       link: "events",
     },
     {
+      title: "Events Calendar",
+      iclass: "bx bx-calendar-event",
+      link: "calendar",
+    },
+    {
       title: "Logout",
       iclass: "bx bx-log-out",
       link: "logout",

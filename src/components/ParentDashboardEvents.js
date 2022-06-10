@@ -88,6 +88,9 @@ const ParentDashboardEvents = () => {
                     Cost: {e.EventsCost}
                   </p>
                   <p className="parentDashboardEventsDiv-item-date">
+                    Description: {e.EventsDescription}
+                  </p>
+                  <p className="parentDashboardEventsDiv-item-date">
                     Safety: {e.EventsSafety}
                   </p>
                   <p
@@ -104,7 +107,7 @@ const ParentDashboardEvents = () => {
                       <div className="flex flex-jcc flex-aic">
                         <input
                           type="number"
-                          placeholder="Number of Member"
+                          placeholder="Number of Members"
                           style={{
                             padding: "10px",
                             width: "170px",

@@ -3,6 +3,7 @@ import "../css/employeeDashboardSetEvent.scss";
 import { baseURL } from "../utils/api/baseURL";
 
 const EmployeeDashboardSetEvent = ({ setSetEventModal }) => {
+  
   const [eventFormData, setEventFormData] = useState({});
   const callAddEventAPI = () => {
     fetch(baseURL + `addEvent/`, {
@@ -17,6 +18,7 @@ const EmployeeDashboardSetEvent = ({ setSetEventModal }) => {
         EventTime: eventFormData.time,
         EventsAddress: eventFormData.address,
         EventsCost: eventFormData.cost,
+        EventsDescription: eventFormData.description,
         EventsSafety: eventFormData.safety,
       }),
     })
@@ -24,6 +26,7 @@ const EmployeeDashboardSetEvent = ({ setSetEventModal }) => {
       .then((res) => {
         const { status } = res;
         if (status === 200) {
+          let body = "Message to be displayed"
           setSetEventModal(false);
           window.location.pathname = "/e/dashboard/events";
         }
@@ -31,12 +34,13 @@ const EmployeeDashboardSetEvent = ({ setSetEventModal }) => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, date, time, address, cost, safety } = eventFormData;
-    if (name && date && time && address && cost && safety) {
+    const { name, date, time, address, cost, description, safety } = eventFormData;
+    if (name && date && time && address && cost && description && safety) {
       // console.log("called....");
       callAddEventAPI();
     }
   };
+  
   return (
     <section className="employeeDashboardSetEvent">
       <div className="employeeDashboardSetEvent-wrapper flex flex-aic flex-jcc">
@@ -106,6 +110,17 @@ const EmployeeDashboardSetEvent = ({ setSetEventModal }) => {
                 setEventFormData({
                   ...eventFormData,
                   cost: e.target.value,
+                });
+              }}
+            ></input>
+            <label>Event Description</label>
+            <input
+              type="text"
+              placeholder="Description"
+              onChange={(e) => {
+                setEventFormData({
+                  ...eventFormData,
+                  description: e.target.value,
                 });
               }}
             ></input>

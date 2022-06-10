@@ -1,3 +1,4 @@
+import { enc } from "crypto-js";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { baseURL } from "../../utils/api/baseURL";
@@ -76,7 +77,7 @@ const Login = () => {
             eventData: eventsData,
           };
           const salt =
-            process.env.SALT || "6d090796-ecdf-11ea-adc1-0242ac112345";
+          process.env.SALT || "6d090796-ecdf-11ea-adc1-0242ac112345";
           const encryptedData = encryptData(originalID, salt);
           localStorage.setItem("loginuser", encryptedData);
 
@@ -85,15 +86,28 @@ const Login = () => {
           } else {
             window.location.pathname = "/p/dashboard/home";
           }
+
           const { EventId } = eventsData;
-          if (localStorage.getItem("popup")) {
-          } else {
-            if (EventId === localStorage.getItem("popup")) {
+          
+          
+          if (localStorage.getItem("popup") == undefined) {
+            if(localStorage.getItem("EventRegistereId") == EventId && localStorage.getItem("userIdLoggedIn") == originalID.userData.ParentId){
+              localStorage.setItem("popup", undefined);
+            }else{
               localStorage.setItem("popup", EventId);
+            }              
+          } else {
+            if (EventId == localStorage.getItem("EventRegistereId") && localStorage.getItem("userIdLoggedIn") == originalID.userData.ParentId) {
+              localStorage.setItem("popup", undefined);
             } else {
+              console.log(originalID.userData.ParentId);
               localStorage.setItem("popup", EventId);
             }
           }
+
+          localStorage.setItem("EventRegistereId",EventId);
+          localStorage.setItem("userIdLoggedIn", originalID.userData.ParentId);
+              
         } else {
           setTimeout(() => {
             setLoginFormErrors({});

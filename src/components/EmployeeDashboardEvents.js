@@ -92,6 +92,9 @@ const EmployeeDashboardEvents = () => {
                       Cost: {e.EventsCost}
                     </p>
                     <p className="parentDashboardEventsDiv-item-date">
+                      Description: {e.EventsDescription}
+                    </p>
+                    <p className="parentDashboardEventsDiv-item-date">
                       Safety: {e.EventsSafety}
                     </p>
                     <p
