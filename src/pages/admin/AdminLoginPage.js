@@ -91,8 +91,9 @@ const AdminLoginPage = () => {
       <div className="login-content flex flex-aic flex-jcc">
         <div className="login-content-name">
           <h1 className="logo" style={{ fontSize: "40px" }}>
-            Employee DayCare
+            T Rex and Friends DayCare
           </h1>
+          <p>Admin Login Page</p>
         </div>
         <form>
           <input
